@@ -16,8 +16,7 @@ This repository provides the details of assembling and controlling the parrot gr
 ## 2. Bill of Materials
 
 **SolidWorks Model**
-<!--  - [**Version 1.0**](media/ParrotGripperV1.0_SolidWorks.zip) (10 Nov. 2021) -->
-- <a href="media/ParrotGripperV1.0_SolidWorks.zip" download>**Version 1.0**</a> (10 Nov. 2021)
+- [**Version 1.0**](media/ParrotGripperV1.0_SolidWorks.zip) (10 Nov. 2021)
 
 
 **Actuators**
