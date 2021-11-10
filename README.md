@@ -16,17 +16,19 @@ This repository provides the details of assembling and controlling the parrot gr
 ## 2. Bill of Materials
 
 **SolidWorks Model**
-- [Version 1.0](media/ParrotGripperV1.0_SolidWorks.zip) (10 Nov. 2021)
+<!--  - [**Version 1.0**](media/ParrotGripperV1.0_SolidWorks.zip)  -->
+- <a id="raw-url" href="https://raw.githubusercontent.com/HKUST-RML/parrot_gripper/master/media/ParrotGripperV1.0_SolidWorks.zip">**Version 1.0**</a> (10 Nov. 2021)
+
 
 **Actuators**
-- Robotiq 2F-140 Adaptive Parallel Jaw Gripper x 1
-- GB6010 gimbal motor x 2
-- MG995 servo motor x 1
+- [**Robotiq 2F-140**](https://robotiq.com/products/2f85-140-adaptive-robot-gripper): Adaptive Parallel Jaw Gripper x 1
+- [**GB6010 gimbal motor**](https://www.aliexpress.com/i/10000018036119.html) x 2
+- [**MG995 servo motor**](https://www.towerpro.com.tw/product/mg995/) x 2
 
 **Electronics**
-- Odrive brushless motor controller board v3.6 x 1
-- AS5048A encoder x 2
-- Arduino Micro x 1
+- [**Odrive v3.6**](https://odriverobotics.com/): brushless motor controller x 1
+- [**AS5048A encoder**](https://ams.com/as5048a) x 2
+- [**Arduino Micro**](https://store.arduino.cc/products/arduino-micro) x 1
 
 ## 3. Assembly Instructions
 
@@ -61,7 +63,7 @@ This repository provides the details of assembling and controlling the parrot gr
 <img src="media/5_assemble_finger_servo.png" height="400">
 </p>
 
-**Note:** Repeat this step for the other  finger 
+**Note:** Repeat this step for the other finger
 
 ### 3.6 Attaching the assembled brackets to the gripper
 <p align = "center">
@@ -90,5 +92,7 @@ This repository provides the details of assembling and controlling the parrot gr
 <img src="media/schematic.png" height="300">
 </p>
 
+The scripts for controlling the gripper can be found in the folder `/script`, where the .ipynb files are the examples of controlling the gripper.  
+
 ## 5. Maintenance
-For any technical issues, please contact Ka Hei Mak khmakac@connect.ust.hk.
+For any technical issues, please contact Ka Hei Mak khmakac@connect.ust.hk
