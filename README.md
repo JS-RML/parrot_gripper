@@ -1,8 +1,8 @@
 # Parrot Gripper
 
 <p align = "center">
-<img src="media/gripper_demo_fast.gif" height="300">
-<img src="media/explodeAnimation.gif" height="300"> 
+<img src="media/gripper_demo_fast.gif" height="200">
+<img src="media/explodeAnimation.gif" height="200"> 
 </p>
 
 ## 1. Overview
@@ -87,7 +87,7 @@ This repository provides the details of assembling and controlling the parrot gr
 
 ## 4. System Schematic
 <p align = "center">
-<img src="media/schematic.png" height="350">
+<img src="media/schematic.png" height="300">
 </p>
 
 ## 5. Maintenance
