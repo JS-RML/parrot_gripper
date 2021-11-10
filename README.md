@@ -6,7 +6,7 @@
 </p>
 
 ## 1. Overview
-The parrot gripper is a robotic end-effector that imitates the parrot's feeding apparatus with a pair of powerful beaks and a soft tongue. This gripper is implemented by retrofitting customized hardware devices with an off-the-shelf industrial robotic gripper. The tongue (or palm) is a five-bar parallel manipulator that is direct-driven by two brushless gimbal motors, which can achieve force control, virtual compliance, and a fast motion. The beaks (or fingers) are actuated by two servo motors that morphs the adaptive linkages of the gripper.
+The parrot gripper is a robotic end-effector that imitates the parrot's feeding apparatus with a pair of powerful beaks and a soft tongue. This end-effector is implemented by retrofitting an off-the-shelf industrial robotic gripper with customized hardware devices. The tongue (or palm) is a five-bar parallel manipulator that is direct-driven by two brushless gimbal motors, which can achieve force control, virtual compliance, and rapid motion. The beaks (or fingers) are actuated by two servo motors that morphs the adaptive linkages of the gripper.
 
 This repository provides the details of assembling and controlling the parrot gripper.
 
@@ -16,7 +16,7 @@ This repository provides the details of assembling and controlling the parrot gr
 ## 2. Bill of Materials
 
 **SolidWorks Model**
-- [Version 1.0]() (10 Nov. 2021)
+- [Version 1.0](media/ParrotGripperV1.0_SolidWorks.zip) (10 Nov. 2021)
 
 **Actuators**
 - Robotiq 2F-140 Adaptive Parallel Jaw Gripper x 1
