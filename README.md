@@ -11,13 +11,13 @@ The parrot gripper is a robotic end-effector that imitates the parrot's feeding 
 This repository provides the details of assembling and controlling the parrot gripper.
 
 **Related Patents:**
-- K. H. Mak, Z. Yin, and J. Seo, "System and Method for Robotic In-Hand Manipulation," (Under preparation).
+- K. H. Mak, Z. Yin, and J. Seo, "*System and Method for Robotic In-Hand Manipulation*," (Under preparation).
 
 ## 2. Bill of Materials
 
 **SolidWorks Model**
-<!--  - [**Version 1.0**](media/ParrotGripperV1.0_SolidWorks.zip)  -->
-- <a id="raw-url" href="https://raw.githubusercontent.com/HKUST-RML/parrot_gripper/master/media/ParrotGripperV1.0_SolidWorks.zip">**Version 1.0**</a> (10 Nov. 2021)
+<!--  - [**Version 1.0**](media/ParrotGripperV1.0_SolidWorks.zip) (10 Nov. 2021) -->
+- <a href="media/ParrotGripperV1.0_SolidWorks.zip" download>**Version 1.0**</a> (10 Nov. 2021)
 
 
 **Actuators**
