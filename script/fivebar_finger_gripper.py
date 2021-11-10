@@ -26,7 +26,7 @@ def set_serial(serial_index = 0):
 # serialPort = "/dev/ttyACM0"
 # baudRate = 57600
 # ser = serial.Serial(serialPort, baudRate, timeout=0.5)
-set_serial(serial_index = 0)
+set_serial(serial_index = 1)
 
 global grip
 def set_gripper(obj):

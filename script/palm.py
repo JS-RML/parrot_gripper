@@ -141,3 +141,18 @@ def get_tip_pos(gripper_width, finger_direction):
     y_tip = gripper_link*cos(joint_angle) + gripper_finger_offset[1] + tip_offset[1] - joint2palm
     x_tip = finger_direction*(gripper_width/2 + finger_thickness - tip_offset[0])
     return (x_tip, y_tip)
+
+def run_circle(center, r, T, cycle = 1):
+    (c_x,c_y) = center
+    t = 0
+    enable_motor()
+    goto((c_x,c_y+r))
+    time.sleep(0.1)
+    t_start = time.time()
+    while t <= cycle*T:
+        x = c_x + sin(t*pi*2/T)*r
+        y = c_y + cos(t*pi*2/T)*r
+        goto((x,y))
+        t = time.time() - t_start
+        time.sleep(1/setpoint_rate)
+    
