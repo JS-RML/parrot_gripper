@@ -1,8 +1,8 @@
 # Parrot Gripper
 
 <p align = "center">
-<img src="media/gripper_demo_fast.gif" height="200">
-<img src="media/explodeAnimation.gif" height="200"> 
+<img src="media/gripper_demo_fast.gif" height="400">
+<img src="media/explodeAnimation.gif" height="400"> 
 </p>
 
 ## 1. Overview
