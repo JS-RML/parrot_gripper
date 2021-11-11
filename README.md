@@ -1,8 +1,8 @@
 # Parrot Gripper
 
 <p align = "center">
-<img src="media/gripper_demo_fast.gif" height="250">
-<img src="media/explodeAnimation.gif" height="250"> 
+<img src="media/gripper_demo_fast.gif" height="230">
+<img src="media/explodeAnimation.gif" height="230"> 
 </p>
 
 ## 1. Overview
@@ -16,7 +16,7 @@ This repository provides the details of assembling and controlling the parrot gr
 ## 2. Bill of Materials
 
 **CAD Model** (SolidWorks2018 or newer is required)
-- [**Version 1.0**](media/ParrotGripperV1.0_SolidWorks.zip) (10 Nov. 2021)
+- [**Version 1.0**](media/ParrotGripperV1.0_SolidWorks2018.zip) (10 Nov. 2021)
 
 
 **Actuators**
