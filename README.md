@@ -1,8 +1,8 @@
 # Parrot Gripper
 
 <p align = "center">
-<img src="media/gripper_demo_fast.gif" height="230">
-<img src="media/explodeAnimation.gif" height="230"> 
+<img src="media/gripper_demo_fast.gif" width="750">
+<img src="media/explodeAnimation.gif" width="750"> 
 </p>
 
 ## 1. Overview
@@ -33,62 +33,62 @@ This repository provides the details of assembling and controlling the parrot gr
 
 ### 3.1 Assembling servo link to gripper bracket
 <p align = "center">
-<img src="media/1_assemble_servolink_to_bracket.png" height="450">
+<img src="media/1_assemble_servolink_to_bracket.png" width="750">
 </p>
 
 **Note:** Repeat this step for the other side of the bracket 
 
 ### 3.2 Attaching the brushless motor to gripper bracket
 <p align = "center">
-<img src="media/2_assemble_motor_to_bracket.png" height="450">
+<img src="media/2_assemble_motor_to_bracket.png" width="750">
 </p>
 
 **Note:** Repeat this step again for another bracket
 
 ### 3.3 Assembling the palm links
 <p align = "center">
-<img src="media/3_assemble_palm_linkages.png" height="450">
+<img src="media/3_assemble_palm_linkages.png" width="750">
 </p>
 
 **Note:** Repeat this step again for another bracket
 
 ### 3.4 Assembling the palm end-effector
 <p align = "center">
-<img src="media/4_assemble_palm_eef.png" height="450">
+<img src="media/4_assemble_palm_eef.png" width="750">
 </p>
 
 ### 3.5 Assembling gripper finger servo
 <p align = "center">
-<img src="media/5_assemble_finger_servo.png" height="450">
+<img src="media/5_assemble_finger_servo.png" width="750">
 </p>
 
 **Note:** Repeat this step for the other finger
 
 ### 3.6 Attaching the assembled brackets to the gripper
 <p align = "center">
-<img src="media/6_attach_bracket.png" height="450">
+<img src="media/6_attach_bracket.png" width="750">
 </p>
 
 ### 3.7 Fastening the gripper brackets
 <p align = "center">
-<img src="media/7_tighten_bracket.png" height="450">
+<img src="media/7_tighten_bracket.png" width="750">
 </p>
 
 ### 3.8 Connecting the palm end-effector
 <p align = "center">
-<img src="media/8_connect_eef.png" height="450">
+<img src="media/8_connect_eef.png" width="750">
 </p>
 
 ### 3.9 Connecting the finger servo link
 <p align = "center">
-<img src="media/9_connect_servolink.png" height="450">
+<img src="media/9_connect_servolink.png" width="750">
 </p>
 
 **Note:** Repeat this step for the other finger
 
 ## 4. System Schematic
 <p align = "center">
-<img src="media/schematic.png" height="300">
+<img src="media/schematic.png" width="750">
 </p>
 
 The scripts for controlling the gripper can be found in the folder `/script`, where the .ipynb files are the examples of controlling the gripper.  
