@@ -98,7 +98,7 @@ This repository provides the details of assembling and controlling the parrot gr
 <img src="media/odrive_motor_connection.png" width="500">
 </p>
 
-**Connecting the encoder to odrive through SPI interface**
+**Connecting the encoders to odrive through SPI interface**
 <p align = "center">
 <img src="media/encoder_connection.png" width="350">
 <img src="media/odrive_SPI_connection.png" width="350">
