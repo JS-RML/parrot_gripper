@@ -31,67 +31,88 @@ This repository provides the details of assembling and controlling the parrot gr
 
 ## 3. Assembly Instructions
 
-### 3.1 Assembling servo link to gripper bracket
+#### 3.1 Assembling servo link to gripper bracket
 <p align = "center">
 <img src="media/1_assemble_servolink_to_bracket.png" width="750">
 </p>
 
-**Note:** Repeat this step for the other side of the bracket 
+**Note:** Repeat this step for the other side of the bracket. The M3 x 25 screw should be placed into the hole before attaching the motor.
 
-### 3.2 Attaching the brushless motor to gripper bracket
+#### 3.2 Attaching the brushless motor to gripper bracket
 <p align = "center">
 <img src="media/2_assemble_motor_to_bracket.png" width="750">
 </p>
 
 **Note:** Repeat this step again for another bracket
 
-### 3.3 Assembling the palm links
+#### 3.3 Assembling the palm links
 <p align = "center">
 <img src="media/3_assemble_palm_linkages.png" width="750">
 </p>
 
 **Note:** Repeat this step again for another bracket
 
-### 3.4 Assembling the palm end-effector
+#### 3.4 Assembling the palm end-effector
 <p align = "center">
 <img src="media/4_assemble_palm_eef.png" width="750">
 </p>
 
-### 3.5 Assembling gripper finger servo
+#### 3.5 Assembling gripper finger servo
 <p align = "center">
 <img src="media/5_assemble_finger_servo.png" width="750">
 </p>
 
-**Note:** Repeat this step for the other finger
+**Note:** Repeat this step for another finger
 
-### 3.6 Attaching the assembled brackets to the gripper
+#### 3.6 Attaching the assembled brackets to the gripper
 <p align = "center">
 <img src="media/6_attach_bracket.png" width="750">
 </p>
 
-### 3.7 Fastening the gripper brackets
+#### 3.7 Fastening the gripper brackets
 <p align = "center">
 <img src="media/7_tighten_bracket.png" width="750">
 </p>
 
-### 3.8 Connecting the palm end-effector
+#### 3.8 Connecting the palm end-effector
 <p align = "center">
 <img src="media/8_connect_eef.png" width="750">
 </p>
 
-### 3.9 Connecting the finger servo link
+#### 3.9 Connecting the finger servo link
 <p align = "center">
 <img src="media/9_connect_servolink.png" width="750">
 </p>
 
-**Note:** Repeat this step for the other finger
+**Note:** Repeat this step for another finger
 
 ## 4. System Schematic
 <p align = "center">
 <img src="media/schematic.png" width="750">
 </p>
 
-The scripts for controlling the gripper can be found in the folder `/script`, where the .ipynb files are the examples of controlling the gripper.  
+#### 4.1 Odrive Connections
+**Connecting the motors through the header to the motor terminals**
+
+<p align = "center">
+<img src="media/odrive_motor_connection.png" width="500">
+</p>
+
+**Connecting the encoder to odrive through SPI interface**
+<p align = "center">
+<img src="media/encoder_connection.png" width="350">
+<img src="media/odrive_SPI_connection.png" width="350">
+</p>
+
+**Note:** the two encoders are identified by the GPIO pin that they connected to. For example, the CSN pin of encoder #1 is connected to GPIO pin 5 and encoder #2 is connection to pin 6.
+
+**USB and power connection**
+<p align = "center">
+<img src="media/odrive_power_connection.png" width="500">
+</p>
+
+**Programming the Parrot Gripper**
+The example with detailed documentation of programming the parrot gripper can be found in `/script/example.ipynb`.
 
 ## 5. Maintenance
 For any technical issues, please contact Ka Hei Mak khmakac@connect.ust.hk

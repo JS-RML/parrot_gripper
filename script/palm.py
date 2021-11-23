@@ -30,7 +30,7 @@ def write_angle(motor_angle):
     axis1.controller.input_pos = raw_q2
     
 def set_stiffness(stiffness):
-    stiffness = max(30,min(stiffness, 150)) #within 30-150 range
+    stiffness = max(15,min(stiffness, 150)) #within 15-150 range
     controller0.config.pos_gain = stiffness
     controller1.config.pos_gain = stiffness
     
