@@ -112,6 +112,7 @@ This repository provides the details of assembling and controlling the parrot gr
 </p>
 
 **Programming the Parrot Gripper**
+
 The example with detailed documentation of programming the parrot gripper can be found in `/script/example.ipynb`.
 
 ## 5. Maintenance
