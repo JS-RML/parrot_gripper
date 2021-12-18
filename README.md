@@ -116,7 +116,8 @@ This repository provides the details of assembling and controlling the parrot gr
 
 #### 5.1 Prerequisites
 Install python3: `sudo apt install python3 python3-pip`
-Install the ODrive tool: `sudo pip3 install --upgrade odrive`
+Install ODrive tool: `sudo pip3 install --upgrade odrive`
+Install urx: `sudo pip install urx`
 Install Jupyter Notebook: `sudo pip3 install jupyter`
 
 #### 5.2 Configuring the ODrive
@@ -131,7 +132,7 @@ odrivetool restore-config palm_config.json
 - Save the configuration by runnung `odrv0.save_configuration()` before turning off the ODrive board.
 
 #### 5.3 Example script
-The example script of controlling the parrot gripper can be found in `/script/example.ipynb`. To run the script: 
+The example script of controlling the parrot gripper can be found in `/script/example.ipynb`. To run the script:
 - Start a Jupyter Notebook server in terminal `jupyter notebook`.
 - Run `example.ipynb` via the Jupyter Notebook web interface.
 
