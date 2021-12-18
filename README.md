@@ -32,55 +32,55 @@ This repository provides the details of assembling and controlling the parrot gr
 
 ## 3. Assembly Instructions
 
-#### 3.1 Assembling servo link to gripper bracket
+### 3.1 Assembling servo link to gripper bracket
 <p align = "center">
 <img src="media/1_assemble_servolink_to_bracket.png" width="750">
 </p>
 
 **Note:** Repeat this step for the other side of the bracket. The M3 x 25 screw should be placed into the hole before attaching the motor.
 
-#### 3.2 Attaching the brushless motor to gripper bracket
+### 3.2 Attaching the brushless motor to gripper bracket
 <p align = "center">
 <img src="media/2_assemble_motor_to_bracket.png" width="750">
 </p>
 
 **Note:** Repeat this step again for another bracket
 
-#### 3.3 Assembling the palm links
+### 3.3 Assembling the palm links
 <p align = "center">
 <img src="media/3_assemble_palm_linkages.png" width="750">
 </p>
 
 **Note:** Repeat this step again for another bracket
 
-#### 3.4 Assembling the palm end-effector
+### 3.4 Assembling the palm end-effector
 <p align = "center">
 <img src="media/4_assemble_palm_eef.png" width="750">
 </p>
 
-#### 3.5 Assembling gripper finger servo
+### 3.5 Assembling gripper finger servo
 <p align = "center">
 <img src="media/5_assemble_finger_servo.png" width="750">
 </p>
 
 **Note:** Repeat this step for another finger
 
-#### 3.6 Attaching the assembled brackets to the gripper
+### 3.6 Attaching the assembled brackets to the gripper
 <p align = "center">
 <img src="media/6_attach_bracket.png" width="750">
 </p>
 
-#### 3.7 Fastening the gripper brackets
+### 3.7 Fastening the gripper brackets
 <p align = "center">
 <img src="media/7_tighten_bracket.png" width="750">
 </p>
 
-#### 3.8 Connecting the palm end-effector
+### 3.8 Connecting the palm end-effector
 <p align = "center">
 <img src="media/8_connect_eef.png" width="750">
 </p>
 
-#### 3.9 Connecting the finger servo link
+### 3.9 Connecting the finger servo link
 <p align = "center">
 <img src="media/9_connect_servolink.png" width="750">
 </p>
@@ -92,7 +92,7 @@ This repository provides the details of assembling and controlling the parrot gr
 <img src="media/schematic.png" width="750">
 </p>
 
-#### 4.1 ODrive Connections
+### 4.1 ODrive Connections
 **Connecting the motors through the header to the motor terminals**
 
 <p align = "center">
@@ -114,27 +114,27 @@ This repository provides the details of assembling and controlling the parrot gr
 
 ## 5. Software
 
-#### 5.1 Prerequisites
+### 5.1 Prerequisites
 - Install python3: `sudo apt install python3 python3-pip`
 - Install ODrive tool: `sudo pip3 install --upgrade odrive`
 - Install urx: `sudo pip install urx`
 - Install Jupyter Notebook: `sudo pip3 install jupyter`
 
-#### 5.2 Configuring the ODrive
+### 5.2 Configuring the ODrive
 To configure the ODrive board with the provided config file, run:
 ```
 cd ~/parrot_gripper/odrive
 odrivetool restore-config palm_config.json
 ```
-**Note:** If the config file cannot be restored due to mismatched firmware on the ODrive board, you can configure the ODrive through the commands. 
+**Note:** If the config file cannot be restored due to mismatched firmware on the ODrive board, you can configure the ODrive by running the commands in the terminal. 
 - Start ODrive tool in terminal `odrivetool`.
 - Copy the commands in `odrive/palm_config_cmd` and execute them in the terminal.
-- Save the configuration by runnung `odrv0.save_configuration()` before turning off the ODrive board.
+- Save the configuration by runnung `odrv0.save_configuration()` before powering off the ODrive board.
 
-#### 5.3 Example script
+### 5.3 Example script
 The example script of controlling the parrot gripper can be found in `/script/example.ipynb`. To run the script:
 - Start a Jupyter Notebook server in terminal `jupyter notebook`.
 - Run `example.ipynb` via the Jupyter Notebook web interface.
 
-## 5. Maintenance
+## 6. Maintenance
 For any technical issues, please contact Ka Hei Mak khmakac@connect.ust.hk
