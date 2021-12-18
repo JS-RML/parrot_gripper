@@ -115,10 +115,10 @@ This repository provides the details of assembling and controlling the parrot gr
 ## 5. Software
 
 #### 5.1 Prerequisites
-Install python3: `sudo apt install python3 python3-pip`
-Install ODrive tool: `sudo pip3 install --upgrade odrive`
-Install urx: `sudo pip install urx`
-Install Jupyter Notebook: `sudo pip3 install jupyter`
+- Install python3: `sudo apt install python3 python3-pip`
+- Install ODrive tool: `sudo pip3 install --upgrade odrive`
+- Install urx: `sudo pip install urx`
+- Install Jupyter Notebook: `sudo pip3 install jupyter`
 
 #### 5.2 Configuring the ODrive
 To configure the ODrive board with the provided config file, run:
@@ -128,7 +128,7 @@ odrivetool restore-config palm_config.json
 ```
 **Note:** If the config file cannot be restored due to mismatched firmware on the ODrive board, you can configure the ODrive through the commands. 
 - Start ODrive tool in terminal `odrivetool`.
-- Copy the commands in `odrive/palm_config_cmd` and execute in the terminal.
+- Copy the commands in `odrive/palm_config_cmd` and execute them in the terminal.
 - Save the configuration by runnung `odrv0.save_configuration()` before turning off the ODrive board.
 
 #### 5.3 Example script
