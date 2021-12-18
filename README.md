@@ -26,7 +26,7 @@ This repository provides the details of assembling and controlling the parrot gr
 - [**MG995 servo motor**](https://www.towerpro.com.tw/product/mg995/) x 2
 
 **Electronics**
-- [**Odrive v3.6**](https://odriverobotics.com/): brushless motor controller x 1
+- [**ODrive v3.6**](https://odriverobotics.com/): brushless motor controller x 1
 - [**AS5048A encoder**](https://ams.com/as5048a) x 2
 - [**Arduino Micro**](https://store.arduino.cc/products/arduino-micro) x 1
 
@@ -92,29 +92,48 @@ This repository provides the details of assembling and controlling the parrot gr
 <img src="media/schematic.png" width="750">
 </p>
 
-#### 4.1 Odrive Connections
+#### 4.1 ODrive Connections
 **Connecting the motors through the header to the motor terminals**
 
 <p align = "center">
 <img src="media/odrive_motor_connection.png" width="500">
 </p>
 
-**Connecting the encoders to odrive through SPI interface**
+**Connecting the encoders to ODrive through SPI interface**
 <p align = "center">
 <img src="media/encoder_connection.png" width="350">
 <img src="media/odrive_SPI_connection.png" width="350">
 </p>
 
-**Note:** the two encoders are identified by the GPIO pin that they connected to. For example, the CSN pin of encoder #1 is connected to GPIO pin 5 and encoder #2 is connection to pin 6.
+**Note:** The two encoders are identified by the GPIO pin that they connected to. For example, the CSN pin of encoder #1 is connected to GPIO pin 5 and encoder #2 is connection to pin 6.
 
 **USB and power connection**
 <p align = "center">
 <img src="media/odrive_power_connection.png" width="500">
 </p>
 
-**Programming the Parrot Gripper**
+## 5. Software
 
-The example with detailed documentation of programming the parrot gripper can be found in `/script/example.ipynb`.
+#### 5.1 Prerequisites
+Install python3: `sudo apt install python3 python3-pip`
+Install the ODrive tool: `sudo pip3 install --upgrade odrive`
+Install Jupyter Notebook: `sudo pip3 install jupyter`
+
+#### 5.2 Configuring the ODrive
+To configure the ODrive board with the provided config file, run:
+```
+cd ~/parrot_gripper/odrive
+odrivetool restore-config palm_config.json
+```
+**Note:** If the config file cannot be restored due to mismatched firmware on the ODrive board, you can configure the ODrive through the commands. 
+- Start ODrive tool in terminal `odrivetool`.
+- Copy the commands in `odrive/palm_config_cmd` and execute in the terminal.
+- Save the configuration by runnung `odrv0.save_configuration()` before turning off the ODrive board.
+
+#### 5.3 Example script
+The example script of controlling the parrot gripper can be found in `/script/example.ipynb`. To run the script: 
+- Start a Jupyter Notebook server in terminal `jupyter notebook`.
+- Run `example.ipynb` via the Jupyter Notebook web interface.
 
 ## 5. Maintenance
 For any technical issues, please contact Ka Hei Mak khmakac@connect.ust.hk
