@@ -131,6 +131,9 @@ odrivetool restore-config palm_config.json
 - Copy the commands in `odrive/palm_config_cmd` and execute them in the terminal.
 - Save the configuration by runnung `odrv0.save_configuration()` before powering off the ODrive board.
 
+**Motors and encoders calibration**
+After setting the config parameters, run `odrv0.axis0.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE` to calibrate the motors and encoders. For more details, see [ODrive documentation](https://docs.odriverobotics.com/).
+
 ### 5.3 Example script
 The example script of controlling the parrot gripper can be found in `/script/example.ipynb`. To run the script:
 - Start a Jupyter Notebook server in terminal `jupyter notebook`.
