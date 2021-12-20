@@ -120,18 +120,32 @@ This repository provides the details of assembling and controlling the parrot gr
 - Install urx: `sudo pip install urx`
 - Install Jupyter Notebook: `sudo pip3 install jupyter`
 
-### 5.2 Configuring the ODrive
+### 5.2 Setting up ODrive
+**Configuring ODrive**
+
 To configure the ODrive board with the provided config file, run:
 ```
 cd ~/parrot_gripper/odrive
 odrivetool restore-config palm_config.json
 ```
-**Note:** If the config file cannot be restored due to mismatched firmware on the ODrive board, you can configure the ODrive by running the commands in the terminal. 
+**Note:** If the config file cannot be restored due to mismatched firmware on the ODrive board, you can configure the ODrive by running the commands in the terminal. To set the configs:
 - Start ODrive tool in terminal `odrivetool`.
 - Copy the commands in `odrive/palm_config_cmd` and execute them in the terminal.
-- Save the configuration by runnung `odrv0.save_configuration()` before powering off the ODrive board.
+- Save the configuration by running `odrv0.save_configuration()` before powering off the ODrive board.
 
-**Motors and encoders calibration**: After setting the config parameters, run `odrv0.axis0.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE` to calibrate the motors and encoders. For more details, see [ODrive documentation](https://docs.odriverobotics.com/).
+**Calibrating motors and encoders**
+
+ After setting the config parameters, the motors and encoders have to be calibrated to measure the motor resistance and encoder offset.
+- Start ODrive tool in terminal `odrivetool`.
+- Run `odrv0.<axis>.requested_state = AXIS_STATE_FULL_CALIBRATION_SEQUENCE` to start the calibration. Change `<axis>` to `axis0` or `axis1` to calibrate the two axes.
+- Run `odrv0.<axis>.encoder.config.pre_calibrated = True` and `odrv0.<axis>.motor.config.pre_calibrated = True` for both axes.
+- Run `odrv0.save_configuration()`.
+
+**Testing the motor control**
+
+- Run `odrv0.axis0.requested_state = AXIS_STATE_CLOSED_LOOP_CONTROL` to see if the motor is holding its position.
+
+ For more details, see [ODrive documentation](https://docs.odriverobotics.com/).
 
 ### 5.3 Example script
 The example script of controlling the parrot gripper can be found in `/script/example.ipynb`. To run the script:
